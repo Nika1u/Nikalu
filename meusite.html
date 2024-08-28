@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikalu Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #f4f4f4;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #f4f4f4;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-image: url('/mnt/data/29 Sem Título_20240716205652.png');
+            background-size: contain;
+            position: absolute;
+            top: -5px;
+            right: -15px;
+        }
+        section {
+            padding: 20px;
+        }
+        section h1 {
+            color: #f4f4f4;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        section h1::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-image: url('/mnt/data/29 Sem Título_20240716205652.png');
+            background-size: contain;
+            position: absolute;
+            top: 0;
+            right: -30px;
+        }
+        .portfolio img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 5px;
+            background-image: url('/mnt/data/29 Sem Título_20240716205652.png');
+            background-size: cover;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .cta {
+            background-color: #333;
+            color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+        }
+        .cta::before {
+            content: '';
+            width: 50px;
+            height: 50px;
+            background-image: url('/mnt/data/29 Sem Título_20240716205652.png');
+            background-size: contain;
+            position: absolute;
+            top: -25px;
+            left: -25px;
+        }
+        footer {
+            background-color: #000;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+        footer::before {
+            content: '';
+            width: 50px;
+            height: 50px;
+            background-image: url('/mnt/data/29 Sem Título_20240716205652.png');
+            background-size: contain;
+            position: absolute;
+            top: -25px;
+            left: calc(50% - 25px);
+        }
+        button {
+            background-color: #e0a3c4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #d48cb0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="/mnt/data/29 Sem Título_20240716205652.png" alt="Nikalu Design">
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#preco">Preços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre">
+        <h1>Sobre Nós</h1>
+        <p>Somos uma empresa dedicada ao design, especializada na criação de logos, mascotes, cardápios e layouts variados. Com uma equipe criativa e atenta aos detalhes, garantimos a entrega de projetos que superam as expectativas dos nossos clientes.</p>
+        <p>Nosso processo de trabalho inclui um tempo de produção entre 2 a 5 dias, com pagamento adiantado. Durante o desenvolvimento, oferecemos feedbacks e realizamos alterações conforme necessário para garantir a satisfação total do cliente.</p>
+    </section>
+
+    <section id="portfolio">
+        <h1>Portfólio</h1>
+        <div class="portfolio">
+            <!-- Substitua pelos seus trabalhos -->
+            <img src="trabalho1.png" alt="Trabalho 1">
+            <img src="trabalho2.png" alt="Trabalho 2">
+            <img src="trabalho3.png" alt="Trabalho 3">
+            <img src="trabalho4.png" alt="Trabalho 4">
+        </div>
+    </section>
+
+    <section id="preco">
+        <h1>Preços</h1>
+        <p>Preço fixo: $100 por design.</p>
+        <p>Inclui feedbacks e alterações durante o processo de criação.</p>
+    </section>
+
+    <section id="contato">
+        <h1>Contato</h1>
+        <div class="cta">
+            <p>Pronto para começar seu projeto? Pague agora e avise-nos para iniciarmos o trabalho imediatamente!</p>
+            <button onclick="window.location.href='https://wa.me/seu-numero-whatsapp'">Fale Conosco no WhatsApp</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>nikalu. você pede, nós fazemos.</p>
+    </footer>
+
+</body>
+</html>
